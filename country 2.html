@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javascript Lowest Population Country</title>
+</head>
+    <body>
+        <script>
+            let country=
+            [
+                {
+                    name:"Palau",
+                    population:21097
+                },
+                {
+                    name:"Monaco",
+                    population:37623
+                },
+                {
+                    name:"Liechtenstein",
+                    population:37815
+                },
+                {
+                    name:"Vatican City",
+                    population:451
+                },
+                {
+                    name:"Marshall Island",
+                    population:53066
+                }
+            ]
+
+            for(let i=0;i<=4;i++)
+            {
+                if(country[i].population<2000)
+                {
+                    console.log(country[i].name);
+                    console.log(country[i].population);
+                }
+            }
+
+        </script>
+    </body>
+</html>
+<!-- 
+reverseArray(array1); // ["Vatican City","Palau","Monaco","Liechtenstein","Marshall Islands"]
+reverseArray(array2); // ["451","21097","37623","37815","53066"] -->
