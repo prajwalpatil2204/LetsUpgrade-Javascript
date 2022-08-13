@@ -1,0 +1,50 @@
+<!-- Button 1 to change color of div
+Button 2 to change size of div
+Button 3 to add a image in div
+Button 4 to remove a image from div -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Button Changes</title>
+    <style>
+        .container
+        {
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            transition: 3s;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+    </div>
+    <h1 id="one">JavaScript</h1>
+    <img id="two" sizes="100, 200">
+        <button onclick="changeColor()">Button 1: Change Color</button>
+        <button onclick="changeSize()">Button 2: Change Size</button>
+        <button onclick="insertImg()">Button 3: Add Image</button>
+        <button onclick="removeImg()">Button 4: Remove Image</button> 
+    <script>
+        function changeColor()
+        {
+            document.querySelector(".container").style.backgroundColor="red"; 
+        }
+        function changeSize()
+        {
+            document.querySelector("#one").style.fontSize="50px"; 
+        }
+        function insertImg()
+        {
+            document.querySelector("#two").setAttribute("src","https://images.pexels.com/photos/192320/pexels-photo-192320.jpeg?auto=compress&cs=tinysrgb&w=600")
+        }
+        function removeImg()
+        {
+            document.querySelector("#two").removeAttribute("src")
+        }
+    </script>
+
+    
+</body>
+</html>
